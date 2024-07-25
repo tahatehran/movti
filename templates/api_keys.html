@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+        <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+        <title>API Keys</title>
+</head>
+<body>
+    <h1>API Keys</h1>
+    <form action="" method="post">
+        <label for="newsapi_key">News API Key:</label><br>
+        <input type="text" id="newsapi_key" name="newsapi_key"><br>
+        <label for="coinmarketcap_key">CoinMarketCap API Key:</label><br>
+        <input type="text" id="coinmarketcap_key" name="coinmarketcap_key"><br>
+        <input type="submit" value="Save API Keys">
+    </form>
+</body>
+</html>
